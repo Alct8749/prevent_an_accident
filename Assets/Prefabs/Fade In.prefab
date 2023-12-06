@@ -191,3 +191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 5288993841595526274}
+  onFadeStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onFadeEnd:
+    m_PersistentCalls:
+      m_Calls: []
