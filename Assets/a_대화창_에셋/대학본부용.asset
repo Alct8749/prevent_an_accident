@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5949499031951039825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 311
+    y: 363.2
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: "\uB098"
+    text: "(\uB77C\uC774\uD130 \uCC98\uB7FC \uC0DD\uAE34\uAC78 \uCC98\uB9AC \uD574\uC57C\uACA0\uB2E4.)"
+    characterSprite: {fileID: 21300000, guid: 72253e37af2586c4198d1d161225a64f, type: 3}
+  parentNode: {fileID: -1022784409563025044}
+  childNode: {fileID: 0}
+--- !u!114 &-4354161892589805475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -115
+    y: 75.20001
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: system
+    text: "\uB204\uAD70\uAC00 \uD654\uC7AC \uC720\uBC1C \uBB3C\uC9C8\uC744 \uD568\uBD80\uB85C
+      \uB098\uB46C \uBC84\uB9B0 \uBAA8\uC591\uC785\uB2C8."
+    characterSprite: {fileID: 21300000, guid: 2b87af715a71a2b43a95d5653340535d, type: 3}
+  parentNode: {fileID: 3468988328871162770}
+  childNode: {fileID: -3141488043165022321}
+--- !u!114 &-3141488043165022321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 102
+    y: 73.20001
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: system
+    text: "\uC81C\uD55C\uB41C \uC2DC\uAC04\uC548\uC5D0 \uBE60\uB974\uAC8C \uCC98\uB9AC\uD574\uC8FC\uC138\uC694"
+    characterSprite: {fileID: 21300000, guid: 2b87af715a71a2b43a95d5653340535d, type: 3}
+  parentNode: {fileID: -4354161892589805475}
+  childNode: {fileID: 290382066568175528}
+--- !u!114 &-1022784409563025044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 631
+    y: 90.20001
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "\uB098"
+    text: "10\uAC1C \uC815\uB3C4 \uCC98\uB9AC\uD558\uBA74 \uB420 \uAC83 \uAC19\uB2E4."
+    characterSprite: {fileID: 21300000, guid: 72253e37af2586c4198d1d161225a64f, type: 3}
+  parentNode: {fileID: 290382066568175528}
+  childNode: {fileID: -5949499031951039825}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: "\uB300\uD559\uBCF8\uBD80\uC6A9"
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 3468988328871162770}
+  - {fileID: -3141488043165022321}
+  - {fileID: -4354161892589805475}
+  - {fileID: 290382066568175528}
+  - {fileID: -1022784409563025044}
+  - {fileID: -5949499031951039825}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &290382066568175528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 367
+    y: 83.20001
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "\uB098"
+    text: "\uC815\uB9D0 \uD070\uC77C \uC774\uAD70\uC694!."
+    characterSprite: {fileID: 21300000, guid: 72253e37af2586c4198d1d161225a64f, type: 3}
+  parentNode: {fileID: -3141488043165022321}
+  childNode: {fileID: -1022784409563025044}
+--- !u!114 &3468988328871162770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -340
+    y: 75.20001
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: system
+    text: "\uC774\uACF3\uC740 \uB300\uD559\uBCF8\uBD80 \uB300\uAC15\uB2F9\uC785\uB2C8\uB2E4."
+    characterSprite: {fileID: 21300000, guid: 2b87af715a71a2b43a95d5653340535d, type: 3}
+  parentNode: {fileID: -1868073505810880904, guid: 66b896e90ba37954fbf79bfcfab303cc, type: 2}
+  childNode: {fileID: -4354161892589805475}

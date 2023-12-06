@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - trash_disposal
   - chemical_disposal
+  - fire_disposal
   layers:
   - Default
   - TransparentFX
