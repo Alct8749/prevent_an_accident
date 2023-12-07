@@ -21,9 +21,12 @@ public class ChangeScene : MonoBehaviour
         switch (currScene.name)
         {
             case "MainScene":
-                SceneManager.LoadScene("테크노Scene"); break;
+                GameManager.instance.isEnterCheck = true;
+                SceneManager.LoadScene("테크노Scene"); 
+                break;
             case "테크노Scene":
-                SceneManager.LoadScene("MainScene"); break;
+                SceneManager.LoadScene("MainScene");
+                break;
         }
     }
 
