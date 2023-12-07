@@ -8,6 +8,11 @@ TagManager:
   - trash_disposal
   - chemical_disposal
   - fire_disposal
+  - Wood
+  - Window
+  - techno
+  - digital
+  - headquarter
   layers:
   - Default
   - TransparentFX

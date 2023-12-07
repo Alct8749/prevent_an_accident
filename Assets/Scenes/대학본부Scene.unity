@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 4291009}
   m_Layer: 0
   m_Name: Potal
-  m_TagString: Untagged
+  m_TagString: headquarter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58857,6 +58857,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 542b422933380c4478262993d469fd22, type: 2}
+    - target: {fileID: 5739705384454096061, guid: 7090bba70ffbb12468651e11c4e9c262, type: 3}
+      propertyPath: m_TagString
+      value: headquarter
+      objectReference: {fileID: 0}
     - target: {fileID: 5961484092025685148, guid: 7090bba70ffbb12468651e11c4e9c262, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

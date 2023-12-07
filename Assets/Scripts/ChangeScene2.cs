@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
-public class ChangeScane2 : MonoBehaviour
+public class ChangeScene2 : MonoBehaviour
 {
     [SerializeField] private UnityEvent onCollide;
     private void OnTriggerEnter(Collider other)
@@ -21,9 +21,10 @@ public class ChangeScane2 : MonoBehaviour
         switch (currScene.name)
         {
             case "MainScene":
-                SceneManager.LoadScene("대학본부Scene"); break;
-            case "대학본부Scene":               SceneManager.LoadScene("MainScene"); break;
+                GameManager.instance.isEnterCheck = true;
+                SceneManager.LoadScene("디지털관Scene"); break;
+            case "디지털관Scene":
+                SceneManager.LoadScene("MainScene"); break;
         }
     }
-
 }

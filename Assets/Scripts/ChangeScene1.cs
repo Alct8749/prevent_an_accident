@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
-public class ChangeScane1 : MonoBehaviour
+public class ChangeScene1 : MonoBehaviour
 {
     [SerializeField] private UnityEvent onCollide;
     private void OnTriggerEnter(Collider other)
@@ -21,10 +21,10 @@ public class ChangeScane1 : MonoBehaviour
         switch (currScene.name)
         {
             case "MainScene":
+                GameManager.instance.isEnterCheck = true;
                 SceneManager.LoadScene("테크노Scene"); break;
             case "테크노Scene":
                 SceneManager.LoadScene("MainScene"); break;
         }
     }
-
 }
