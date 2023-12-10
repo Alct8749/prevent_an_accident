@@ -7,6 +7,8 @@ public class fire_player : MonoBehaviour
     // Start is called before the first frame update
     int count = 0; // 성공 여부 판단용 변수
     public GameObject success_text;
+    public AudioClip fire_disposalSound; // 효과음 AudioClip을 Inspector에서 설정
+    public AudioClip fireSound; // 효과음 AudioClip을 Inspector에서 설정
     private bool hasCollided = false; // 충돌 여부를 추적하기 위한 변수
     private string collisionMessage = "";
     private float messageDisplayTime = 1f; // 메시지를 표시할 시간(1초)
@@ -20,6 +22,7 @@ public class fire_player : MonoBehaviour
         if (collision.gameObject.CompareTag("fire_disposal"))
         {
             count += 1;
+            AudioSource.PlayClipAtPoint(fire_disposalSound, transform.position);
         }
         if (!hasCollided && collision.gameObject.CompareTag("Fire"))
         {
@@ -31,9 +34,11 @@ public class fire_player : MonoBehaviour
             // 충돌한 오브젝트가 "Fire" 태그를 가진 경우에만 속도를 감소시킵니다.
             SimpleSampleCharacterControl playerController = GetComponent<SimpleSampleCharacterControl>();
 
+            AudioSource.PlayClipAtPoint(fireSound, transform.position);
+
             if (playerController != null)
             {
-                // Player의 속도를 1씩 줄입니다.
+               
                 playerController.m_moveSpeed -= decreaseAmount;
             }
         }
@@ -53,6 +58,7 @@ public class fire_player : MonoBehaviour
             GameObject MediumFlames2 = GameObject.Find("MediumFlames (2)");
             GameObject MediumFlames3 = GameObject.Find("MediumFlames (3)");
             GameObject Timer = GameObject.Find("Timer");
+            GameObject fire함정 = GameObject.Find("fire 함정");
             Destroy(FireBall);
             Destroy(FlameThrower);
             Destroy(MediumFlames);
@@ -60,6 +66,7 @@ public class fire_player : MonoBehaviour
             Destroy(MediumFlames2);
             Destroy(MediumFlames3);
             Destroy(Timer);
+            Destroy(fire함정);
             Vector3 successPrefabPosition = new Vector3(-10f, 0f, 32.8f);
             Quaternion successPrefabRotation = Quaternion.Euler(0f, 0f, 0f); // Y 회전을 180도로 설정
             Instantiate(success_text, successPrefabPosition, successPrefabRotation);
