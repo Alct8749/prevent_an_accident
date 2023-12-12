@@ -5,7 +5,7 @@ using UnityEngine;
 public class chemical_disposal : MonoBehaviour
 {
     public Transform chemicalBin; // Inspector에서 할당하지 않습니다.
-
+    public GameObject disposial_bgm;
     private void Start()
     {
         // 런타임에 화학물질통 오브젝트를 찾아서 할당합니다.
@@ -21,11 +21,11 @@ public class chemical_disposal : MonoBehaviour
             currentScale.y -= 0.5f; // Y 스케일을 10% 줄입니다.
             chemicalBin.localScale = currentScale;
 
-            // 화학물질통 오브젝트의 Y 좌표를 10% 내립니다.
+            // 화학물질통 오브젝트의 Y 좌표를 내립니다.
             Vector3 currentPosition = chemicalBin.position;
-            currentPosition.y -= currentPosition.y * 0.05f; // Y 좌표를 10% 내립니다.
+            currentPosition.y -= 1; // Y 좌표를 1만큼 내립니다.
             chemicalBin.position = currentPosition;
-
+            Instantiate(disposial_bgm);
             // 해당 오브젝트를 파괴
             Destroy(gameObject);
         }

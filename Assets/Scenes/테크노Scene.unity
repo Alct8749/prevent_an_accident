@@ -7336,6 +7336,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 687600984516192290, guid: e52949eef04d2ed469ad39da7480d672, type: 3}
+      propertyPath: explosion_bgm
+      value: 
+      objectReference: {fileID: 112590347838591502, guid: 25a3ba5b5cd9c0f429f3a0ba4ae67288, type: 3}
     - target: {fileID: 1937163203642416285, guid: e52949eef04d2ed469ad39da7480d672, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.824613
@@ -9158,6 +9162,8 @@ MonoBehaviour:
   flask: {fileID: 8922302788375812754, guid: cf62299e327664941a9bc1e9ab8bd610, type: 3}
   Player: {fileID: 564539090}
   success_text: {fileID: 375664592968828498, guid: 89ec79eb59db0c84f8b0368d9b2c89ea, type: 3}
+  success_bgm: {fileID: 21303456506905019, guid: 7baa5ea5b358edd4db4cc3e9987589e4, type: 3}
+  flask_bgm: {fileID: 3388819331675643545, guid: cb7bc5baef0d1f44c84da7d8ba2198a6, type: 3}
 --- !u!1 &1835375398
 GameObject:
   m_ObjectHideFlags: 0

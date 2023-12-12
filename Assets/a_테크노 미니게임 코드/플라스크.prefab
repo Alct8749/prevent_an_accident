@@ -216,3 +216,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be45bbd7d4a8330469b3121889d442b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chemicalBin: {fileID: 0}
+  disposial_bgm: {fileID: 3412436831336038862, guid: 9bcb9e53e1995814f8564bd547643c3f, type: 3}
