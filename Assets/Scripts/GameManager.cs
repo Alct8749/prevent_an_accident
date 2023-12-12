@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public bool isEnterCheck = false;
     public Vector3 lastEnteredPortal;
     // Start is called before the first frame update
+
     void Start()
     {
         if (instance == null)
@@ -22,4 +23,5 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
     }
+
 }
