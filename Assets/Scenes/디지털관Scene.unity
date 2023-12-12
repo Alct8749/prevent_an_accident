@@ -4548,7 +4548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6866553929664272672, guid: c62daf0c72e4398478a2d03e8c0b5ff8, type: 3}
       propertyPath: fadeSpeed
-      value: 0.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6866553929664272672, guid: c62daf0c72e4398478a2d03e8c0b5ff8, type: 3}
       propertyPath: onFadeEnd.m_PersistentCalls.m_Calls.Array.size
@@ -9064,9 +9064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54d58e8b13c9e2439a2bb35b2ffbaff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onCollide:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1610164780
 GameObject:
   m_ObjectHideFlags: 0
@@ -10480,7 +10477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yScaleMax: 40
-  yScaleSpeed: 5
+  yScaleSpeed: 15
 --- !u!1001 &1909705224
 PrefabInstance:
   m_ObjectHideFlags: 0
