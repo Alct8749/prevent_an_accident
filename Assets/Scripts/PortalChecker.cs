@@ -5,11 +5,14 @@ using UnityEngine;
 public class PortalChecker : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+
+    void Update()
     {
-        if (!GameManager.instance.isEnterCheck) return;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        player.transform.position = GameManager.instance.lastEnteredPortal;
-        GameManager.instance.isEnterCheck = false;
+
+           if (!GameManager.instance.isEnterCheck) {return; }
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.transform.position = GameManager.instance.lastEnteredPortal;
+           GameManager.instance.isEnterCheck = false;
+
     }
 }

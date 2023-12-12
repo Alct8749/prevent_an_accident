@@ -21,6 +21,7 @@ public class ChangeScene3 : MonoBehaviour
         switch (currScene.name)
         {
             case "MainScene":
+                GameManager.instance.isEnterCheck = true;
                 SceneManager.LoadScene("대학본부Scene"); break;
             case "대학본부Scene":
                 SceneManager.LoadScene("MainScene"); break;
