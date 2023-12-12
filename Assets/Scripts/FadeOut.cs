@@ -11,6 +11,7 @@ using UnityEngine.Events;
 public class FadeOut : MonoBehaviour
 {
     public Image image;
+    public float fadeSpeed = 15.0f;
     [SerializeField] private UnityEvent onFadeStart;
     [SerializeField] private UnityEvent onFadeEnd;
 
@@ -26,7 +27,7 @@ public class FadeOut : MonoBehaviour
         float fadeCount = 0;
         while(fadeCount < 1.0f)
         {
-            fadeCount += 15f*Time.deltaTime;
+            fadeCount += fadeSpeed*Time.deltaTime;
             yield return new WaitForSeconds(0.01f);
             image.color = new Color(0, 0, 0, fadeCount);
         }

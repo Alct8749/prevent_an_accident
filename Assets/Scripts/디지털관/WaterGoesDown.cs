@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaterGoesDown : MonoBehaviour
 {
     public float yScaleMax = 10.0f;
+    public float yScaleSpeed = 3.0f;
     public void flushWater()
     {
         StartCoroutine(DecreaseHeight());
@@ -18,7 +19,7 @@ public class WaterGoesDown : MonoBehaviour
         Vector3 scale = gameObject.transform.localScale;
         while (scale.y > 0)
         {
-            scale.y -= 3 * Time.deltaTime;
+            scale.y -= yScaleSpeed * Time.deltaTime;
             gameObject.transform.localScale = scale;
             yield return new WaitForSeconds(0.01f);
         }
@@ -28,7 +29,7 @@ public class WaterGoesDown : MonoBehaviour
         Vector3 scale = gameObject.transform.localScale;
         while (scale.y <= yScaleMax)
         {
-            scale.y += 3 * Time.deltaTime;
+            scale.y += yScaleSpeed * Time.deltaTime;
             gameObject.transform.localScale = scale;
             yield return new WaitForSeconds(0.01f);
         }
