@@ -9,7 +9,7 @@ public class PortalChecker : MonoBehaviour
     void Update()
     {
 
-           if (!GameManager.instance.isEnterCheck) {return; }
+           if (!GameManager.instance.isEnterCheck) { Destroy(gameObject); }
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = GameManager.instance.lastEnteredPortal;
            GameManager.instance.isEnterCheck = false;

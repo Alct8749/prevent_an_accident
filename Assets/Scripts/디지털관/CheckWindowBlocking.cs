@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class CheckWindowBlocking : MonoBehaviour
 {
     [SerializeField] private UnityEvent onComplete;
+    [SerializeField] private UnityEvent onPileAdded;
     private int status = 0;
     public GameObject[] planes;
     private GameObject player;
@@ -26,6 +27,7 @@ public class CheckWindowBlocking : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             GameManager.instance.isItemOnHand = false;
+            onPileAdded.Invoke();
             foreach(GameObject o in GameObject.FindGameObjectsWithTag("Wood")){
                 Destroy(o);
             }
